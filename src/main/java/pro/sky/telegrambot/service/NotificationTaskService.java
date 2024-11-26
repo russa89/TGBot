@@ -17,9 +17,9 @@ import java.util.List;
 
 @Service
 public class NotificationTaskService {
-    @Autowired
+
     private final TelegramBot telegramBot;
-    @Autowired
+
     private final NotificationTaskRepository notificationTaskRepository;
 
     public NotificationTaskService(TelegramBot telegramBot, NotificationTaskRepository notificationTaskRepository) {

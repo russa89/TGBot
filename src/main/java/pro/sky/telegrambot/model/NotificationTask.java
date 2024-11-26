@@ -12,7 +12,7 @@ public class NotificationTask {
     private long id;
     private long chatId;
     private String message;
-    @Column(name = "timing")
+    @Column(name = "message_timing")
     private LocalDateTime dateTime;
 
     public NotificationTask() {

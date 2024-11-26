@@ -12,7 +12,9 @@ message_timing TIMESTAMP NOT NULL
 ALTER TABLE notification_task
 ALTER COLUMN chat_id TYPE BIGINT;
 
-
+-- changeset nast:3
+ALTER TABLE notification_task
+ADD CONSTRAINT chat_id_unique UNIQUE (chat_id);
 
 
 
